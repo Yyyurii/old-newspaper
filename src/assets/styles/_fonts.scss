@@ -1,0 +1,31 @@
+// @mixin font-style($font-family, $font-style, $font-weight, $file-name, $font-path) {
+//   $path: "#{$font-path}/#{$file-name}";
+  
+//   @font-face {
+//     font-family: $font-family;
+//     font-style: $font-style;
+//     font-weight: $font-weight;
+//     // src: url("#{$path}.eot");
+//     // src: url("#{$path}.eot?#iefix") format("embedded-opentype"),
+//     // url("#{$path}.woff2") format("woff2"),
+//     // url("#{$path}.woff") format("woff"),
+//     src: url("#{$path}.ttf") format("truetype");
+//   }
+// }
+
+
+// $fontPathAve: "../fonts/ave";
+// @include font-style("Averiaserif", normal, 700, "averiaserif-bold", $fontPathAve);
+// @include font-style("Averiaserif", italic, 700, "averiaserif-bolditalic", $fontPathAve);
+// @include font-style("Averiaserif", italic, 400, "averiaserif-italic", $fontPathAve);
+// @include font-style("Averiaserif", normal, 300, "averiaserif-light", $fontPathAve);
+// @include font-style("Averiaserif", italic, 300, "averiaserif-lightitalic", $fontPathAve);
+// @include font-style("Averiaserif", normal, 400, "averiaserif-regular", $fontPathAve);
+@font-face {
+    font-family: 'Averiaserif';
+    src: url('../fonts/averiaserif-bold.ttf');
+    font-style: bold;
+    font-weight: 700;
+}
+
+
