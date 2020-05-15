@@ -361,3 +361,50 @@ img {
     -webkit-clip-path: polygon(50% 0%, 66% 27%, 98% 35%, 76% 57%, 79% 91%, 50% 78%, 21% 91%, 24% 57%, 2% 35%, 32% 27%);
     clip-path: polygon(50% 0%, 66% 27%, 98% 35%, 76% 57%, 79% 91%, 50% 78%, 21% 91%, 24% 57%, 2% 35%, 32% 27%);
 }
+
+.third-articles {
+    display: flex;
+
+    &__frame-img {
+        flex-shrink: 0;
+        margin: 0 20px 0 0;
+    }
+
+    &__title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+}
+
+.unerline-black-normal {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        background-color: #000;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        background-color: #000;
+    }
+}
+
+.first-news {
+    &__title {
+        font-size: 25px;
+        text-align: center;    
+        margin: 0 0 15px;
+    }
+}
