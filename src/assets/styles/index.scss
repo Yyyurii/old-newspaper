@@ -138,7 +138,7 @@ img {
 }
 
 //=====================================================================//
-@import '_fonts';
+
 // body {
 //     background-image: url(../images/papper.jpg);
 // }
@@ -149,7 +149,7 @@ img {
     width: 100%;
     // height: 100vh;
     background-image: url(../images/paper-051.jpg);
-    padding: 50px;
+    padding: 75px;
     margin: 0 auto;
 }
 
@@ -213,6 +213,7 @@ img {
 .body {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 40px;
 }
 
 .left-column {
@@ -403,8 +404,48 @@ img {
 
 .first-news {
     &__title {
-        font-size: 25px;
-        text-align: center;    
+        font-size: 30px;
+        text-align: center;
         margin: 0 0 15px;
+    }
+}
+
+.second-news {
+    &__img {
+        margin: 0 0 20px;
+    }
+}
+
+.important {
+    width: 100%;
+}
+
+.third-news {
+    &__phone {
+        font-size: 35px;
+    }
+
+    &__number {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    &__schedule {
+        text-align: center;
+    }
+
+    &__frame-img {
+        margin: 20px 0 0 0;
+    }
+}
+
+.telephone {
+    width: 100%;
+}
+
+.first-data {
+    &__title {
+        font-size: 40px;
+        text-align: center;
     }
 }
