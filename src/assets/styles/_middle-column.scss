@@ -1,0 +1,40 @@
+.first-news {
+    &__title {
+        font-size: 30px;
+        text-align: center;
+        margin: 0 0 15px;
+    }
+}
+
+.second-news {
+    &__img {
+        margin: 0 0 20px;
+    }
+}
+
+.important {
+    width: 100%;
+}
+
+.third-news {
+    &__phone {
+        font-size: 35px;
+    }
+
+    &__number {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    &__schedule {
+        text-align: center;
+    }
+
+    &__frame-img {
+        margin: 20px 0 0 0;
+    }
+}
+
+.telephone {
+    width: 100%;
+}

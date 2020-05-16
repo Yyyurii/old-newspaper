@@ -1,0 +1,65 @@
+.wrapper {
+    max-width: 1360px;
+    width: 100%;
+    // height: 100vh;
+    background-image: url(../images/paper-051.jpg);
+    padding: 75px;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+
+    &__main-title {
+        font-size: 50px;
+    }
+
+    &__sidebars {
+        font-size: 10px;
+        max-width: 60px;
+        text-align: center;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        background-color: #000;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        height: 1px;
+        background-color: #000;
+    }
+
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        background-color: #000;
+    }
+}
