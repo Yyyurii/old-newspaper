@@ -1,7 +1,15 @@
 .first-data {
+    @media (max-width:900px) {
+        display: none;
+    }
     &__title {
         font-size: 40px;
         text-align: center;
         margin: 20px 0;
+    }   
+}
+.second-data {
+    @media (max-width:900px) {
+        display: none;
     }
 }

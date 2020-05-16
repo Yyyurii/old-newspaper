@@ -7,6 +7,11 @@
 }
 
 .second-news {
+    @media (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     &__img {
         margin: 0 0 20px;
     }
@@ -14,9 +19,17 @@
 
 .important {
     width: 100%;
+    @media (max-width:768px) {
+        width: auto;
+    }
 }
 
 .third-news {
+    @media (max-width:900px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     &__phone {
         font-size: 35px;
         text-align: center;
@@ -38,4 +51,25 @@
 
 .telephone {
     width: 100%;
+    @media (max-width:900px) {
+        width: auto;
+    }
+}
+
+.second-data-media {
+    display: none;
+    @media (max-width:900px) {
+        display: block;
+    }
+}
+.third-articles-media {
+    display: none;
+    @media (max-width:900px) {
+        display: block;
+    }
+    @media (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
