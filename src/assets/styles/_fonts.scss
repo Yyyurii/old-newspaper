@@ -1,31 +1,39 @@
-// @mixin font-style($font-family, $font-style, $font-weight, $file-name, $font-path) {
-//   $path: "#{$font-path}/#{$file-name}";
+@mixin font-style($font-family, $font-style, $font-weight, $file-name, $font-path) {
+  $path: "#{$font-path}/#{$file-name}";
   
-//   @font-face {
-//     font-family: $font-family;
-//     font-style: $font-style;
-//     font-weight: $font-weight;
-//     // src: url("#{$path}.eot");
-//     // src: url("#{$path}.eot?#iefix") format("embedded-opentype"),
-//     // url("#{$path}.woff2") format("woff2"),
-//     // url("#{$path}.woff") format("woff"),
-//     src: url("#{$path}.ttf") format("truetype");
-//   }
-// }
+  @font-face {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url("#{$path}.eot");
+    // src: url("#{$path}.eot?#iefix") format("embedded-opentype"),
+    // url("#{$path}.woff2") format("woff2"),
+    src: url("#{$path}.woff") format("woff"),
+    // url("#{$path}.ttf") format("truetype");
+  }
+}
 
 
-// $fontPathAve: "../fonts/ave";
-// @include font-style("Averiaserif", normal, 700, "averiaserif-bold", $fontPathAve);
+$fontPathAve: "../fonts";
+@include font-style("averia_serifbold", normal, 700, "averiaserif-bold-webfont", $fontPathAve);
 // @include font-style("Averiaserif", italic, 700, "averiaserif-bolditalic", $fontPathAve);
 // @include font-style("Averiaserif", italic, 400, "averiaserif-italic", $fontPathAve);
 // @include font-style("Averiaserif", normal, 300, "averiaserif-light", $fontPathAve);
 // @include font-style("Averiaserif", italic, 300, "averiaserif-lightitalic", $fontPathAve);
 // @include font-style("Averiaserif", normal, 400, "averiaserif-regular", $fontPathAve);
-@font-face {
-    font-family: 'Averiaserif';
-    src: url('../fonts/averiaserif-bold.ttf');
-    font-style: bold;
-    font-weight: 700;
-}
+// @font-face {
+//     font-family: 'Averiaserif';
+//     src: url('../fonts/averiaserif-bold.ttf');
+//     font-style: bold;
+//     font-weight: 700;
+// }
 
+// @font-face {
+//     font-family: 'averia_serifbold';
+//     src: url('../fonts/averiaserif-bold-webfont.woff') format('woff2'),
+//          url('../fonts/averiaserif-bold-webfont.woff2') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
 

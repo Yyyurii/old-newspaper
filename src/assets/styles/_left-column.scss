@@ -14,19 +14,19 @@
 
 .first-articles {
     &__paragraph {
-        display: flex;
         margin: 15px 0;
     }
-
-    &__top-article {
-        flex-shrink: 2;
-        margin-left: 15px;
+    &__top-article {           
+        float: right;
     }
-
     &__title {
         font-size: 20px;
         text-align: justify;
         width: 100%;
+    }
+    &__frame-img {
+        float: left;
+        margin: 0 20px 0 0;
     }
 }
 
@@ -39,8 +39,6 @@
     border: 3px solid #000;
     position: relative;
     padding: 3px;
-    display: flex;
-    align-items: center;
 }
 
 .frame-img:before {
@@ -100,13 +98,9 @@
         margin: 0 0 25px;
     }
 
-    &__paragraph {
-        display: flex;
-    }
-
     &__frame-img {
-        flex-shrink: 0;
         margin: 0 0 0 20px;
+        float: right;
     }
 
     &__frame-img:before {
@@ -124,16 +118,20 @@
 
 
 .third-articles {
-    display: flex;
 
     &__frame-img {
-        flex-shrink: 0;
+        float: left;
         margin: 0 20px 0 0;
     }
 
     &__title {
         font-size: 25px;
         text-align: center;
+        font-family: 'averia_serifbold';
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
     }
 
 }
